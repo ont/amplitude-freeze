@@ -28,7 +28,7 @@ docker run \
     ontrif/amplitude-freeze
 ```
 
-Config file must describe all graphs with full urls:
+Config file `config.json` must describe all graphs with full urls:
 ```
 [
     {
