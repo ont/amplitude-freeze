@@ -1,0 +1,17 @@
+[
+    {
+        "group": "First group",
+        "graphs": [
+            { "url" : "https://analytics.amplitude.com/org/123123/chart/mfmfmfmf", "title": "Example chart" }
+        ]
+    },
+    {
+        "group": "Second group",
+        "graphs": [
+            { "url" : "https://analytics.amplitude.com/org/123123/chart/11111111", "title": "Example chart 1" },
+            { "url" : "https://analytics.amplitude.com/org/123123/chart/22222222", "title": "Example chart 2" },
+            { "url" : "https://analytics.amplitude.com/org/123123/chart/33333333", "title": "Example chart 3" },
+            { "url" : "https://analytics.amplitude.com/org/123123/chart/44444444", "title": "Example chart 4" }
+        ]
+    }
+]
