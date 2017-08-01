@@ -19,10 +19,12 @@ docker build -t amplitude-freeze-image .
 You can run service from prebuilded image with command
 ```
 docker run \
-    -d --name amplitude-freeze \
+    --name amplitude-freeze \
+    -ti \
     -e AMPFREEZE_LOGIN=amplitude-login@email.com \
     -e AMPFREEZE_PASSW=amplitude-password \
     -v /path/to/config.json:/srv/config.json \
+    -p 8000:8000
     ontrif/amplitude-freeze
 ```
 
@@ -46,3 +48,5 @@ Config file must describe all graphs with full urls:
     }
 ]
 ```
+
+Then you can watch fetching process in terminal and then open http://localhost:8000 with result page.
