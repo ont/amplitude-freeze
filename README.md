@@ -1,7 +1,7 @@
 # amplitude-freeze
 This microservice solve problem of sharing amplitude's graphs with other people.
 
-It uses phantomjs to login on amplitude.com as configured user (taken from env
+It uses phantomjs to login on https://amplitude.com as configured user (taken from env
 variables `AMPFREEZE_LOGIN` and `AMPFREEZE_PASSW`) and then opens one by one all
 pages from config file. After opening page it extracts graph html and all used
 CSS styles.
