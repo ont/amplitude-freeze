@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+</head>
+<body>
+    <style>
+        html, body {
+            height: 100%;
+        }
+    </style>
+
+    <div id="barchart"></div>
+    <script>
+
+var trace1 = {
+  x: ['Ознакомление с курсом', 'Прошли все слайды', 'Начали прохождение квеста с чисткой зубов', 'Прошли весь 21-дневный курс', 'Прочитали полную статью о продуктовой линейке SPLAT'],
+  y: [3476, 1951, 702, 0, 163],
+  //marker:{
+  //  color: ['rgba(204,204,204,1)', 'rgba(222,45,38,0.8)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)']
+  //},
+  type: 'bar'
+};
+
+var data = [trace1];
+
+var layout = {
+    title: 'Какой-то там график по детям',
+    height: 500,
+    margin: {
+        t: 50,
+        r: 50,
+        b: 200,
+        l: 50,
+        pad: 4
+    }
+};
+
+Plotly.newPlot('barchart', data, layout);
+
+    </script>
+</body>
+</html>
